@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatPhotoApp</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <main>
+        <div class="header-container">
+            <h1>CatPhotoApp</h1>
+            <img src="assets/paw-prints.png" alt="paw prints">
+            
+        </div>
+        
+
+        <section class="section-pictures">
+            <h2>Cat Photos</h2>
+
+            <p>Everyone loves <a href="">cute cats</a> online !</p>
+            <p>See more <a href="">cat photos</a> in our gallery.</p>
+            <a href=""><img src="assets/cat-baby.webp" alt="A cute orange cat"></a>
+        </section>
+
+        <section class="section-lists">
+            <h2>Cat Lists</h2>
+
+            <h3>Things cats love:</h3>
+            <ul>
+                <li>catnip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+            <figure>
+                <img src="assets/lasagna-food-850x638.jpg" alt="A slice of lasagna">
+                <figcaption>Cats <em>love</em> lasagna</figcaption>
+            </figure>
+
+            <h3>Top 3 things cats hate:</h3>
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+            <figure>
+                <img src="assets/cat-fight.jpg" alt="Two cats fighting">
+                <figcaption>
+                    Cats <strong>hate</strong> other cats
+                </figcaption>
+            </figure>
+        </section>
+        
+        <section>            
+            <h2>Cat Form</h2>
+
+            <form action="">
+                <fieldset>
+                    <legend>Is your cat an indoor or outdoor cat?</legend>
+                    <label for="indoor"><input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked>Indoor</label>
+                    <label for="outdoor"><input type="radio" name="indoor-outdoor" value="outdoor" id="outdoor">Outdoor</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What's your cat's personality?</legend>
+                    <input type="checkbox" id="loving" name="personality" value="loving" checked>
+                    <label for="loving">Loving</label>
+
+                    <input type="checkbox" id="lazy" value="lazy" name="personality">
+                    <label for="lazy">Lazy</label>
+
+                    <input type="checkbox" id="energetic" value="energetic" name="personality">
+                    <label for="energetic">Energetic</label>
+                </fieldset>
+                <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
